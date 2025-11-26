@@ -32,6 +32,9 @@ yarn-error.log*
 .env*
 backend/agentEnv
 backend/credentials.json
+.vscode/
+backend/__pycache__/
+
 
 # vercel
 .vercel
