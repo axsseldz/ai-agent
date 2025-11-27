@@ -1,0 +1,90 @@
+===========================================
+CLÍNICA DENTAL SONRISA PERFECTA – BASE DE CONOCIMIENTO OFICIAL
+===========================================
+
+INFORMACIÓN GENERAL
+- Nombre: Clínica Dental Sonrisa Perfecta
+- Dirección: Calle Las Palmas #321, Zona Centro, Ensenada, Baja California.
+- Teléfono: (646) 555-8921
+- Correo: contacto@sonrisaperfecta.mx
+- Sitio web: www.sonrisaperfecta.mx
+
+HORARIOS
+- Lunes a Viernes: 9:00 AM – 7:00 PM
+- Sábado: 9:00 AM – 2:00 PM
+- Domingo: Cerrado
+- La clínica NO agenda citas fuera del horario establecido.
+
+EQUIPO MÉDICO
+1. Dra. Sofía Herrera – Odontología General  
+   Especialista en limpiezas, caries, resinas, extracciones simples.
+
+2. Dr. Andrés Morales – Ortodoncia  
+   Especialista en brackets metálicos, estéticos e Invisalign.
+
+3. Dra. Fernanda Ruiz – Estética Dental  
+   Experta en blanqueamientos, carillas y diseño de sonrisa.
+
+SERVICIOS Y PRECIOS (LENGUAJE NATURAL)
+- Limpieza dental → cuesta aproximadamente **seiscientos pesos**.
+- Blanqueamiento láser → alrededor de **dos mil pesos**.
+- Resina (empaste) → cuesta cerca de **novecientos pesos por diente**.
+- Extracción simple → aproximadamente **ochocientos pesos**.
+- Carillas → alrededor de **tres mil quinientos pesos por pieza**.
+- Brackets metálicos → inicio de tratamiento **ochocientos pesos**, más **seiscientos pesos mensuales**.
+- Invisalign → inicio de tratamiento **siete mil quinientos pesos**, más **mil doscientos pesos mensuales**.
+- Consulta de urgencia → **quinientos pesos**.
+
+PREGUNTAS FRECUENTES (FAQ)
+- ¿Duele la limpieza? → Generalmente no, pero puede causar un poco de sensibilidad temporal.
+- ¿Atienden niños? → Sí, a partir de los 7 años.
+- ¿Tienen estacionamiento? → Sí, gratuito.
+- ¿Qué duración tiene el blanqueamiento? → De 45 a 60 minutos.
+- ¿Qué incluye una limpieza? → Eliminación de sarro, pulido dental y revisión general.
+- ¿Puedo pagar con tarjeta? → Sí.
+- ¿Puedo cancelar? → Debes avisar mínimo 2 horas antes.
+- ¿Qué pasa si llego tarde? → Si te retrasas más de 10 minutos, podría reprogramarse.
+
+POLÍTICAS DE LA CLÍNICA
+- Llegar 10 minutos antes de la cita.
+- Retraso de más de 10 minutos ⇢ posible reprogramación.
+- Reprogramaciones solo con 2+ horas de anticipación.
+- Dos ausencias sin aviso ⇢ futuras citas requieren anticipo.
+- Métodos de pago: efectivo, tarjeta, transferencia.
+- Mensualidades disponibles para ortodoncia e Invisalign.
+
+MAPEO DE SÍNTOMAS → TRATAMIENTOS
+- Dientes amarillos → blanqueamiento con Dra. Fernanda. Precio ≈ dos mil pesos.
+- Sensibilidad leve → puede recomendar limpieza.
+- Diente fracturado → puede ser resina (≈ novecientos pesos) o extracción (≈ ochocientos).
+- Dolor fuerte / inflamación → consulta de urgencia (≈ quinientos pesos).
+- Dientes chuecos → brackets o Invisalign con Dr. Andrés.
+- Caries → resina con Dra. Sofía.
+- Encías sangrantes → se recomienda limpieza profunda.
+
+MAPEO DE SERVICIOS → DOCTOR
+- Limpieza, caries, resina → Dra. Sofía Herrera
+- Blanqueamiento, carillas → Dra. Fernanda Ruiz
+- Brackets e Invisalign → Dr. Andrés Morales
+
+REGLAS DE RECOMENDACIÓN SEGURA
+- No dar diagnósticos médicos.
+- Sugerir tratamientos usando:
+  * “Lo más probable es que…”
+  * “Podría ser útil…”
+  * “La doctora lo confirmará cuando te revise.”
+
+REPORTES PARA DASHBOARD
+Cada vez que termine una conversación, el asistente debe generar un reporte con:
+- Nombre del paciente (si lo menciona)
+- Fecha y hora de la cita
+- Tipo de tratamiento
+- Síntomas mencionados
+- Tratamiento sugerido
+- Doctor asignado
+- Nivel de urgencia (normal / moderada / alta)
+- Notas relevantes
+- Timestamp de creación
+
+FIN DEL ARCHIVO
+===========================================
