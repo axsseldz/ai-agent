@@ -45,8 +45,6 @@ def analyze_message(user_message: str):
         ]
     )
 
-    print("AI Response:", completion)  # Debug log
-
     content = completion.choices[0].message.content
     content = content.replace("```json", "").replace("```", "").strip()
 

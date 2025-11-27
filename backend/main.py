@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from intent_engine import analyze_message
 from report_generator import generate_report
 from calendar_utils import create_calendar_event
+from check_availability import check_availability
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -17,22 +18,27 @@ def root():
 class PatientMessage(BaseModel):
     transcript: str
 
+class AppointmentRequest(BaseModel):
+    name: str
+    appointment_type: str
+    date: str     
+    time: str      
+    symptoms: str | None = ""
+    recommended_service: str | None = ""
+    doctor: str | None = ""
+
+class AvailabilityRequest(BaseModel):
+    year: int
+    month: int
+    day: int
+    time: str
+
 
 @app.post("/interpret")
 def interpret_message(req: PatientMessage):
     print("🟦 interpret called")
     result = analyze_message(req.transcript)
     return result
-
-
-class AppointmentRequest(BaseModel):
-    name: str
-    appointment_type: str
-    date: str      # YYYY-MM-DD
-    time: str      # HH:MM
-    symptoms: str | None = ""
-    recommended_service: str | None = ""
-    doctor: str | None = ""
 
 
 @app.post("/schedule-appointment")
@@ -70,3 +76,17 @@ def schedule_appointment(req: AppointmentRequest):
     print("✅ appointment scheduled")
 
     return res
+
+
+@app.post("/check-availability")
+def check_availability_endpoint(req: AvailabilityRequest):
+    print("🗓️ Checking availability...")
+
+    result = check_availability(
+        year=req.year,
+        month=req.month,
+        day=req.day,
+        time_str=req.time
+    )
+    
+    return result
