@@ -1,1 +1,274 @@
 @import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: #f3f6fb;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(0.99);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-1.5deg) translateY(-6px);
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+}
+
+.agent-float {
+  animation: float 8s ease-in-out infinite, sway 9s ease-in-out infinite;
+}
+
+.agent-glow {
+  animation: pulseGlow 5s ease-in-out infinite;
+}
+
+.agent-pulse {
+  animation: pulseGlow 4s ease-in-out infinite, breathe 6s ease-in-out infinite;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-30%);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(30%);
+    opacity: 0.4;
+  }
+}
+
+.orbital {
+  animation: orbit 14s linear infinite;
+}
+
+.shimmer {
+  animation: shimmer 5s ease-in-out infinite;
+}
+
+@keyframes barSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes floatLoop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes flowPulse {
+  0%,
+  100% {
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.08);
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    box-shadow: 0 16px 40px rgba(99, 102, 241, 0.16);
+    transform: scale(1.01) translateY(-4px);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.flow-animate {
+  animation: floatUp 0.9s ease forwards, floatLoop 6s ease-in-out infinite, flowPulse 7s ease-in-out infinite;
+}
+
+.stack-animate {
+  animation: floatUp 1s ease forwards;
+}
+
+.flow-bar {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #10b981, #22d3ee, #6366f1, #22d3ee, #10b981);
+  background-size: 200% 100%;
+  animation: barSlide 4s linear infinite;
+  border-radius: 9999px;
+  pointer-events: none;
+}
+
+@keyframes spinSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sweep {
+  0% {
+    transform: translateX(-60%);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(60%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-60%);
+    opacity: 0.3;
+  }
+}
+
+@keyframes pulseOutline {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(16, 185, 129, 0.04);
+  }
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(6px) scale(0.9);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-14px) scale(1.05);
+    opacity: 0;
+  }
+}
+
+.particle {
+  animation: particleFloat 5s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes textGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.whatsapp-glow {
+  background: linear-gradient(120deg, #25d366, #1ebe5d, #128c7e);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textGlow 5s ease-in-out infinite;
+  text-shadow: 0 4px 12px rgba(18, 140, 126, 0.35);
+}
+@keyframes floatLoop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes flowPulse {
+  0%,
+  100% {
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.08);
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    box-shadow: 0 16px 40px rgba(99, 102, 241, 0.16);
+    transform: scale(1.01) translateY(-4px);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.flow-animate {
+  animation: floatUp 0.9s ease forwards, floatLoop 6s ease-in-out infinite, flowPulse 7s ease-in-out infinite;
+}
+
+.stack-animate {
+  animation: floatUp 1s ease forwards;
+}
