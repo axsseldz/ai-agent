@@ -15,7 +15,9 @@ Landing en Next.js + backend en FastAPI para un agente de voz que interpreta, ag
 
 ## Vista del frontend
 Vista de el landing page
-- ![Interfaz](https://shorturl.at/Fh2sT)
+
+[![Website](./frontend/app/landing.png)](https://ai-agent-five-beta.vercel.app)
+
 
 ---
 
